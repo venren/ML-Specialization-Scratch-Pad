@@ -1,2 +1,2 @@
-# Kaggle Workbook
-Codebase to practise data science with Kaggle data
+# ML Scratch Pad
+Scratch pad to practise ML Algorithms
