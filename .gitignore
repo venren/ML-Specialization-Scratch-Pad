@@ -35,3 +35,5 @@ terraform.rc
 
 #Ignore GCP SVC Key
 dev-service-key.json
+
+.ipynb_checkpoints

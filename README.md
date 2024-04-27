@@ -1,2 +1,2 @@
-# ML Scratch Pad
-Scratch pad to practise ML Algorithms
+# ML Specialization Scratch Pad
+
