@@ -19,8 +19,15 @@ def testNeuralNetworkImplementationwithTwoInputVariable():
 
     print("Testing the perceptron:")
     predictions = model.predict(X)
-    predictions = pd.Series(predictions.reshape(-1,1))
-    result = pd.concat([X,y, predictions])
-    print(result)
+    predictions = pd.Series(predictions.flatten())
+    X = X.reset_index(drop=True)
+    y = y.reset_index(drop=True)
+    predictions = predictions.reset_index(drop=True)
+    predictions = predictions.apply(lambda x: 1 if x >= 0.5 else 0)
+    result = pd.concat([X,y, predictions], axis=1)
+    correct_predictions = (result['Outcome'] == result[0]).sum()
+    total_predictions = len(predictions)
+    accuracy = correct_predictions / total_predictions
+    print("Accuracy:", accuracy)
 
 testNeuralNetworkImplementationwithTwoInputVariable()
