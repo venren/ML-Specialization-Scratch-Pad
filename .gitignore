@@ -37,3 +37,5 @@ terraform.rc
 dev-service-key.json
 
 .ipynb_checkpoints
+
+.vevn
