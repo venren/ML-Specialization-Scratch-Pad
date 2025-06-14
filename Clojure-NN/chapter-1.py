@@ -1,3 +1,5 @@
+## matrix operations with activation function
+
 import numpy as np 
 
 def x():

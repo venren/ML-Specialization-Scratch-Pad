@@ -1,3 +1,5 @@
+## simple matrix operations
+
 import numpy as np 
 
 def x():
